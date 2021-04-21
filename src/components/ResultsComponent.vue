@@ -1,6 +1,6 @@
 <template>
     <div class="Results">
-
+        <h3></h3>
     </div>
 
 </template>
@@ -9,13 +9,12 @@
 <script>
     import { AppState } from '../AppState'
     import { computed, reactive } from 'vue'
-    import { picturesService } from '../services/PicturesService'
 
     export default {
-        name: 'results',
+        name: 'Results',
         setup() {
             const state = reactive({
-                results: computed(() => Appstate.results)
+                results: computed(() => AppState.results)
             })
             return {
                 state
